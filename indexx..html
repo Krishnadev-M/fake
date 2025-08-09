@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brogle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Brogle</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search gains, dogs, etc..." />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="resultMessage"></div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <h2>Terms & Conditions</h2>
+      <p>
+        Before you may continue using Brogle, you must accept the following:
+        <ul>
+          <li>You agree that leg day is mandatory.</li>
+          <li>We may share your dog's data with squirrels.</li>
+          <li>Typing "how to bulk fast" makes your gains disappear.</li>
+          <li>You surrender your protein shake privileges on rejection.</li>
+        </ul>
+      </p>
+      <div class="modal-actions">
+        <input type="checkbox" id="tandcCheckbox" />
+        <label for="tandcCheckbox" id="tandcLabel">I have read and agree.</label>
+        <button id="agreeBtn" disabled>Agree</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
